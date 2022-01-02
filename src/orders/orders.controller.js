@@ -2,12 +2,6 @@ const path = require("path");
 const orders = require(path.resolve("src/data/orders-data"));
 const nextId = require("../utils/nextId"); // Use this function to assigh ID's when necessary
 
-//add handlers and middleware functions to create, read, update, delete, and list orders.
-// add validation function
-
-//export all of the functions appropriately
-//add and remove data from the arrays using push() and splice()
-
 function orderExists(req, res, next) {
   const orderId = req.params.orderId;
   const foundOrder = orders.find((order) => order.id === orderId);
