@@ -2,9 +2,6 @@ const path = require("path");
 const dishes = require(path.resolve("src/data/dishes-data"));
 const nextId = require("../utils/nextId"); //// Use this function to assign ID's when necessary
 
-// TODO: Implement the /dishes handlers needed to make the tests pass
-//add handlers and middleware functions to create, read, update, and list dishes. Note that dishes cannot be deleted.
-
 //VALIDATION//
 function dishExists(req, res, next) {
   const dishId = req.params.dishId;
